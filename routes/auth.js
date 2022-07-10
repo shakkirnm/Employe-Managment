@@ -36,7 +36,7 @@ router.get("/register", async (req,res) => {
 
           var mailOptions = {
             from: 'timepass7077@gmail.com',
-            to: 'shakkirnm@gmail.com',
+            to: req.body.email,
             subject: 'Login Credentials',
             text: 'Your Email Email is : '+ req.body.email + '\nPassword is : '+ req.body.password
           };
